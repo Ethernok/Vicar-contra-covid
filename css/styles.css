@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+    background-image: url("/img/prism.svg");
+    
+    font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+}
+
+header {
+    /*background-image: url("/img/Ayuntamiento.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-x: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #51D6FF;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+header img {
+    
+    width: auto;
+    height: 100%;
+
+}
+
+header h1 {
+    padding: 2% 0%;
+    padding-left:5%;
+    font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5em;
+}
+
+header .logo{
+    width:150px;
+}
+nav {
+    padding: 1% 5%;
+    background-color: #37FF8B;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+nav div a {
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#current {
+    color: #00008A;
+    text-decoration: underline;
+}
+
+nav div a:hover {
+    transition: 0.3s;
+    color: #00008A;
+    text-decoration: underline;
+
+}
+
+#section1 {
+    background-color: #8D9EC6;
+    text-align: justify;
+    display: flex;
+    padding: 2%;
+    font-size: 1.15em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#section1 h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#section1 p {
+    margin: 5%;
+}
+
+
+#section1 ul li {
+    margin: 0% 5%;
+    padding: 1%;
+    font-weight: bolder;
+
+
+}
+
+#section1 img {
+    border-radius: 5px;
+    width: 52%;
+    margin: 1%;
+}
+
+#section2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    background-color: #FBD1A2;
+    display: flex;
+    margin: 1.5% 0%;
+    margin-bottom: 0px;
+    font-size: 1.15em;
+}
+
+#section2 h2 {
+    margin: 0px auto;
+    padding-top: 4%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#section2 p {
+    margin: 3% 5%;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+#section2 img {
+    border-radius: 5px;
+    width: 80%;
+    margin: 2%;
+}
+
+#section1-ciudadanos {
+    background-color: #8D9EC6;
+    text-align: justify;
+    display: flex;
+    padding: 2%;
+    font-size: 1.15em;
+
+}
+
+#section1-ciudadanos h2 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#section1-ciudadanos p {
+    margin: 7% 5%;
+}
+
+#section1-ciudadanos img {
+    border-radius: 5px;
+    width: 52%;
+    margin: 1%;
+}
+
+#section1-contacto {
+    background-color: #FBD1A2;
+    text-align: justify;
+    display: flex;
+    padding: 2%;
+    font-size: 1.15em;
+}
+
+#section1-contacto h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#section1-contacto p {
+    margin: 3% 2%;
+}
+
+#div-contacto {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+#div-contacto .icon {
+
+    width: 5%;
+    height: 10%;
+}
+
+footer {
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0px auto;
+    padding: 0.5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+footer p:hover {
+    color: #37FF8B;
+}
+
+@media screen and (max-width:1300px) {
+    #section1 {
+        flex-direction: column;
+    }
+
+    #section1 img {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #section2 {
+        flex-direction: column;
+    }
+
+    #section2 img {
+        width: 96%;
+        padding: 0;
+        margin: 0px auto;
+        margin: 2% 2% 0% 2%;
+
+    }
+
+    #section1-ciudadanos {
+        flex-direction: column;
+    }
+
+    #section1-ciudadanos p {
+        padding: 0;
+        margin: 5%;
+    }
+
+    #section1-ciudadanos img {
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .main-div {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        margin: 0px;
+    }
+
+    .main-div {
+        width: 100%;
+        margin: 0px auto;
+        border-radius: 0px;
+    }
+
+    header {
+        align-items: center;
+        border-radius: 0px;
+        flex-direction: column;
+
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header img {
+        width: 60%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav div {
+        margin: 2% 0%;
+    }
+
+    #section1-ciudadanos h2 {
+        margin: 0% 5%;
+    }
+
+    footer {
+
+        border-radius: 0px;
+    }
+
+    footer p {
+        margin: 0% 5%;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+    #section1-contacto #p-section {
+        max-width: 100%;
+    }
+
+    header img {
+        width: 80%;
+    }
+    header{
+        padding:2% 2%;
+    }
+
+}
