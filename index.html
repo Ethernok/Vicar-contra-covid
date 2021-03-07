@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css">
     <title>Vicar en Acción</title>
     <link rel="shortcut icon" href="./img/logoVicar.svg" type="image/x-icon">
@@ -18,11 +19,12 @@
         </header>
         <nav id="main-nav">
             <div><a id="current" href="#">Inicio</a></div>
-            <div><a href="#section2">Medidas Anti COVID-19</a></div>
+            <div><a href="#medidas">Medidas Anti COVID-19</a></div>
+            <div><a href="#galeria">Galería</a></div>
             <div><a href="./ciudadanos.html">Ciudadanos</a></div>
             <div><a href="./contacto.html">Contacto</a></div>
         </nav>
-        <section id="section1">
+        <section class="section1">
             <div id="p-section">
                 <h2>Tomar Consciencia </h2>
                 <p>En una charla encabezada por nuestro alcalde, <b>Antonio Bonilla</b>, en la que tuvo lugar en el
@@ -49,7 +51,7 @@
         </section>
     </div>
     <div class="container">
-        <section id="section2">
+        <section class="section2" id="medidas">
             <img src="./img/test_ancianos.jpg"
                 alt="Imagen donde están tomandole una muestra de saliva a una persona mayor debido a covid diecinueve.">
             <div>
@@ -73,37 +75,93 @@
             </div>
         </section>
     </div>
-        <div class="container">
-            <section id="section2">
-                <img src="./img/test_ancianos.jpg"
-                    alt="Imagen donde están tomandole una muestra de saliva a una persona mayor debido a covid diecinueve.">
-                <div>
-                    <h2>Medidas contra la COVID-19</h2>
-                    <p>Este virus ha hecho mucho daño a nuestros mayores y a personas vulnerables, por eso hemos decidido
-                        tomar medidas para combatirlo, a parte de los consejos que os hemos dado arriba, para que Vicar,
-                        nuestro pueblo sea mucho más seguro.</p>
-                    <p>La primera medida que hemos tomado ha sido la obligatoriedad de tener geles desinfectantes en la
-                        entrada de los comercios (si son pequeños) y edificios públicos (En estos los geles desinfectantes
-                        están repartidos dentro de ellos). Si queremos que Vicar sea "Free COVID" esto es lo primero que hay
-                        que hacer. </p>
-                    <p>También los equipos de limpieza de barrios están usando un desinfectante especial para las calles de
-                        Vicar y espacios públicos, así se disminuye el contagio urbano, además de aumentar la seguridad de
-                        poder andar con tranquilidad por la calle.</p>
-                    <p>Se va a realizar un escribo masivo de test a personas residentes en Vicar con el fin de detectar
-                        precozmente personas positivas en COVID y asintomáticos, ya que estos son mucho más dificiles de
-                        detectar sin una PCR.</p>
-                    <p>A parte del escribo masivo vamos a realizar test a todos nuestros mayores que vivan en Vicar,
-                        incluyendo las residencias de mayores con el fin de detectar un contagio masivo en estos edificios y
-                        a parte, comprobar que nuestros mayores están libres de peligro.</p>
+    <div class="container">
+        <section class="section1 section-galeria" id="galeria">
+            <h2 id="galeria-title">Imágenes destacadas de acciones ciudadanas</h2>
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="./img/galeria1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./img/galeria2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./img/galeria3.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./img/galeria4.jpg" alt="">
+                    </div>
                 </div>
-            </section>
-            <footer>
-                <p>Creado por Emilio Gómez López | 2021 &copy; |</p>
-            </footer>
+            
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        
-    
+            <!--<div id="carousel-container">
+                <div class="slider fade">
+                    <img src="./img/galeria1.jpg" alt="Comedor social de monjas">
+                </div>
+                <div class="slider fade">
+                    <img src="./img/galeria2.jpg" alt="Comedor social donde aparecen personas comiendo">
+                </div>
+                <div class="slider fade">
+                    <img src="./img/galeria3.jpg" alt="Alcalde de Vicar dando una charla">
+                </div>
+                <div class="slider fade">
+                    <img src="./img/galeria4.jpg" alt="Alcalde de Vicar sentado">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+
+
+
+            </div>!-->
+
+        </section>
+    </div>
+    <div class="container">
+        <section class="section1 section-contacto">
+            <div id="p-section">
+                <h2>Contacto</h2>
+                <p class="contacto-info">Si necesitas contactar con nosotros, ya sea para ayudar a combatir los
+                    contagios, echar una mano a
+                    los vecinos de Vicar, informar de algún contagio o participar en algún acto solidario o benéfico
+                    contra la COVID, tenemos a disposición los siguientes métodos de contacto: </p>
+
+                <div id="div-contacto">
+                    <img class="icon" src="./img/telefono.svg" alt="">
+                    <p>Teléfono: 950928371 - 621231985.</p>
+                    <img class="icon" src="./img/email.png" alt="">
+                    <p>Email: ayuntamientoPuebla@ juntaandalucia.es</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Creado por Emilio Gómez López | 2021 &copy; </p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

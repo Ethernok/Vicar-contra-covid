@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+*{
+    box-sizing:content-box;
+    
+}
 body {
     background-image: url("/img/prism.svg");
     
     font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
 }
 
 .container {
-    background-color: white;
+    padding:0px;
     border-radius: 20px;
     margin: 0px auto;
     text-align: center;
@@ -77,7 +82,7 @@ nav div a:hover {
 
 }
 
-#section1 {
+.section1 {
     background-color: #8D9EC6;
     text-align: justify;
     display: flex;
@@ -87,17 +92,17 @@ nav div a:hover {
     border-bottom-right-radius: 20px;
 }
 
-#section1 h2 {
+.section1 h2 {
     text-align: center;
     font-size: 2em;
 }
 
-#section1 p {
+.section1 p {
     margin: 5%;
 }
 
 
-#section1 ul li {
+.section1 ul li {
     margin: 0% 5%;
     padding: 1%;
     font-weight: bolder;
@@ -105,44 +110,92 @@ nav div a:hover {
 
 }
 
-#section1 img {
+.section1 img {
     border-radius: 5px;
     width: 52%;
     margin: 1%;
 }
-
-#section2 {
+/* Galeria de imagenes, slider incluido */
+.section-galeria{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    display: flex;
+    margin: 1.5% 0%;
+    margin-bottom: 0px;
+    text-align:center;
+    flex-direction: column;
+}
+
+#galeria-title{
+    text-align:center;
+}
+.carousel-container{
+    max-width:1000px;
+    
+    margin:auto;
+}
+.carousel-inner .item img{
+        width:65%;
+        min-width:65%;
+        max-height:500px;
+        margin:0px auto;
+        object-fit: contain;
+   }
+   .carousel-inner .item{
+      text-align:center; 
+   }
+/* Fin de galeria de imagenes, slider incluido */
+.section2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     width: 100%;
     background-color: #FBD1A2;
     display: flex;
     margin: 1.5% 0%;
     margin-bottom: 0px;
+    padding:0px;
     font-size: 1.15em;
 }
+.section-contacto{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    margin: 1.5% 0%;
+    margin-bottom: 0px;
+    font-size: 1.15em;
+}
+.section-contacto p{
+    margin: 1%;
+}
+.contacto-info{
+    font-size:1.5rem;
+}
 
-#section2 h2 {
+.section2 h2 {
     margin: 0px auto;
     padding-top: 4%;
     text-align: center;
     font-size: 2em;
 }
 
-#section2 p {
+.section2 p {
     margin: 3% 5%;
     text-align: justify;
     font-style: italic;
     font-weight: bolder;
 }
 
-#section2 img {
+.section2 img {
     border-radius: 5px;
     width: 80%;
     margin: 2%;
 }
 
-#section1-ciudadanos {
+.section1-ciudadanos {
     background-color: #8D9EC6;
     text-align: justify;
     display: flex;
@@ -151,23 +204,23 @@ nav div a:hover {
 
 }
 
-#section1-ciudadanos h2 {
+.section1-ciudadanos h2 {
     padding-top: 3%;
     text-align: center;
     font-size: 2em;
 }
 
-#section1-ciudadanos p {
+.section1-ciudadanos p {
     margin: 7% 5%;
 }
 
-#section1-ciudadanos img {
+.section1-ciudadanos img {
     border-radius: 5px;
     width: 52%;
     margin: 1%;
 }
 
-#section1-contacto {
+.section1-contacto {
     background-color: #FBD1A2;
     text-align: justify;
     display: flex;
@@ -175,12 +228,12 @@ nav div a:hover {
     font-size: 1.15em;
 }
 
-#section1-contacto h2 {
+.section1-contacto h2 {
     text-align: center;
     font-size: 2em;
 }
 
-#section1-contacto p {
+.section1-contacto p {
     margin: 3% 2%;
 }
 
@@ -199,7 +252,7 @@ nav div a:hover {
 }
 
 footer {
-
+    cursor: pointer;
     text-align: center;
     background-color: black;
     color: white;
@@ -214,20 +267,20 @@ footer p:hover {
 }
 
 @media screen and (max-width:1300px) {
-    #section1 {
+    .section1 {
         flex-direction: column;
     }
 
-    #section1 img {
+    .section1 img {
         width: 100%;
         margin: 0px auto;
     }
 
-    #section2 {
+    .section2 {
         flex-direction: column;
     }
 
-    #section2 img {
+    .section2 img {
         width: 96%;
         padding: 0;
         margin: 0px auto;
@@ -254,6 +307,13 @@ footer p:hover {
     .main-div {
         width: 95%;
     }
+    .carousel-inner .item img{
+        width:80%;
+        
+   }
+   .container{
+       width:100%;
+   }
 }
 
 @media screen and (max-width:480px) {
@@ -302,7 +362,10 @@ footer p:hover {
     footer p {
         margin: 0% 5%;
     }
-
+    .carousel-inner .item img{
+        width:100%;
+        
+   }
 
 }
 
