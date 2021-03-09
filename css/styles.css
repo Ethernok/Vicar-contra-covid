@@ -52,9 +52,12 @@ header h1 {
 
 header .logo{
     width:150px;
+    margin:20px 0;
 }
 nav {
     padding: 1% 5%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #37FF8B;
     display: flex;
     justify-content: space-between;
@@ -86,6 +89,8 @@ nav div a:hover {
     background-color: #8D9EC6;
     text-align: justify;
     display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 2%;
     font-size: 1.15em;
     border-bottom-left-radius: 20px;
@@ -262,6 +267,88 @@ footer {
     border-bottom-right-radius: 20px;
 }
 
+
+/*------------------------- Banner publicitario------------------*/
+.banner{
+    border:5px solid rgb(249 65 81);
+    border-radius: 2px;
+    margin:1% 0px;
+    text-align: center;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width:99%;
+    max-height:100%;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name:rainbow-border;
+    border-radius:20px;
+}
+.banner h2{
+    font-weight: bold;
+    font-size:3.6rem;
+    padding:2%;
+    color:rgb(0 172 95);
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-name:breath;
+    
+}
+.banner h2:hover{
+    color:rgb(0 172 95);
+    
+}
+@keyframes rainbow-border {
+    0% {
+      border-color: rgb(249 65 81);
+    }
+
+    20%{
+        border-color: #3ff3e4;
+    }
+    40% {
+      border-color: #0098fd;
+    }
+    60% {
+      border-color:  #13f396;
+    }
+    80% {
+      border-color:  #ca26f3;
+    }
+    100%{
+        border-color: rgb(249 65 81);
+    }
+    
+  }
+  @keyframes breath {
+   
+    0%{
+        transform:scaleX(1);
+    }
+    50%{
+        transform:scaleX(1.1);
+    }
+    
+    100%{
+        transform:scaleX(1);
+    }
+    
+  }
+
+/*--------------------- Fin Banner publicitario----------------*/
+
+.section-video{
+    flex-direction:column;
+    
+    align-content: center;
+    
+}
+.section-video iframe{
+    margin:50px auto;
+    border-radius:10px;
+    width: 70%;
+    height:540px;
+}
 footer p:hover {
     color: #37FF8B;
 }
@@ -314,6 +401,11 @@ footer p:hover {
    .container{
        width:100%;
    }
+   .section-video iframe{
+    
+    width: 100%;
+    height:540px;
+}
 }
 
 @media screen and (max-width:480px) {
