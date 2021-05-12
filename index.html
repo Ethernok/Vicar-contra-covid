@@ -25,11 +25,12 @@
             <div><a href="#medidas">Medidas Anti COVID-19</a></div>
             <div><a href="#galeria">Galería</a></div>
             <div><a href="#ciudadanos">Ciudadanos</a></div>
+            <div><a href="#faq">FAQ</a></div>
             <div><a href="#contacto">Contacto</a></div>
         </nav>
         <div class="relative"><a class="link-banner" href="#galeria"><div class="banner"><h2>Nueva Galería de imágenes, haz click en este banner!</h2>
-        </div></a><img class="close-banner" src="./img/window-close-solid.svg"></div>
-        <section class="section1">
+        </div></a><img class="close-banner" src="./img/window-close-solid.svg"></></div>
+        <section id="first-section" class="section1">
             
             <div id="p-section">
                 <h2>Tomar Consciencia </h2>
@@ -86,31 +87,37 @@
             <h2 id="galeria-title">Imágenes destacadas de acciones ciudadanas</h2>
             
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+               
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
-            
-                <!-- Wrapper for slides -->
+                <div id="zoom-buttons" class="carousel-indicators">
+                    <img id="zoom-out" src="img/search-minus-solid.svg"/>
+                    <img id="zoom-in" src="img/search-plus-solid.svg"/>
+                </div>
+                
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="./img/galeria1.jpg" alt="">
+                        <a href="./img/galeria1.jpg" target="_blank"><img src="./img/galeria1.jpg" alt=""></a>
                     </div>
                     <div class="item">
-                        <img src="./img/galeria2.jpg" alt="">
+                        <a href="./img/galeria2.jpg" target="_blank"><img src="./img/galeria2.jpg" alt=""></a>
+                        
                     </div>
                     <div class="item">
-                        <img src="./img/galeria3.jpg" alt="">
+                        <a href="./img/galeria3.jpg" target="_blank"><img src="./img/galeria3.jpg" alt=""></a>
+                        
                     </div>
                     <div class="item">
-                        <img src="./img/galeria4.jpg" alt="">
+                        <a href="./img/galeria4.jpg" target="_blank"><img src="./img/galeria4.jpg" alt=""></a>
+                        
                     </div>
                 </div>
             
-                <!-- Controls -->
+                <!-- Controles -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"></span>
                     <span class="sr-only">Previous</span>
@@ -130,6 +137,33 @@
                 <iframe src="https://www.youtube.com/embed/bdx7WiL-VRU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
              
         </section>
+    </div>
+    <div class="container">
+        <section class="section1 section-faq" id="faq">
+            <div id="p-section">
+                <h2>Preguntas frequentes</h2>
+                <center><button id="faq-button" type="button">Abrir/Cerrar Todo</button></center>
+                <div id="faq-questions">
+                    <h3>¿Cómo puedo colaborar con los ciudadanos?</h3>
+                    <div>
+                        <p>Si quieres ayudar a combatir la pandemia, ya sea colaborando monetariamente, de forma voluntaria repartiendo mascarillas, o ayudando al ayuntamiento en las diversas actividades que se están realizando para frenar la expansión del virus, en la sección de "contacto" puedes hablarnos directamente para hacernos saber que estás interesad@ en ello, o ir al ayuntamiento directamente.</p>
+                    </div>
+                    <h3>¿Puedo subir yo mism@ mis fotos?</h3>
+                    <div>
+                        <p>Si quieres que tus fotos salgan en la galería de la página, mandanos un correo a la dirección de contacto con tus fotos y las colgaremos sin ningún problema! </p>
+                    </div>
+                    <h3>¿Cada cuanto tiempo se hacen proyectos o actividades voluntarias?</h3>
+                    <div>
+                        <p>Normalmente nos adaptamos a las circunstancias del estado de alarma y expansión del virus. Por ejemplo, el reparto de mascarillas lo hacemos una vez cada dos semanas, con lo qué, si te quieres apuntar debes mandar un correo a la dirección del ayuntamiento de la Puebla de Vicar o contactar por teléfono y te avisaremos unos días antes para la preparación de la actividad.</p>
+                    </div>
+                    <h3>¿Hay recompensa en la accion de voluntariado del ayuntamiento?</h3>
+                    <div>
+                        <p>Como se indica en la palabra "voluntariado" es una acción que se realiza con la voluntad, por lo tanto recompesa monetaria no habrá, pero se reconocerá las acciones en las que hayas participado y cuando pase el estado de alarma y se tenga inmunidad de rebaño colectivo, se invitará a todos los voluntarios a una cena por su esfuerzo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </div>
     <div class="container">
         <section class="section1 section-contacto" id="contacto">

@@ -96,6 +96,9 @@ nav div a:hover {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+#first-section{
+    margin-top:2%;
+}
 
 .section1 h2 {
     text-align: center;
@@ -130,6 +133,15 @@ nav div a:hover {
     text-align:center;
     flex-direction: column;
 }
+#zoom-buttons{
+    bottom:0;
+}
+#zoom-buttons img{
+    max-width: 20px;
+    margin-top:20px;
+    cursor:pointer;
+    
+}
 
 #galeria-title{
     text-align:center;
@@ -139,6 +151,7 @@ nav div a:hover {
     
     margin:auto;
 }
+
 .carousel-inner .item img{
         width:65%;
         min-width:65%;
@@ -163,6 +176,41 @@ nav div a:hover {
     padding:0px;
     font-size: 1.15em;
 }
+/*---------------FAQ----------------------*/
+.section-faq{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 1.5% 0%;
+    margin-bottom: 0px;
+    
+}
+
+
+
+.ui-accordion .ui-accordion-content{
+    padding:0;
+    background-color: #8D9EC6;
+    border:0px;
+}
+.ui-accordion .ui-accordion-header{
+   color: #4e72c5;
+}
+#faq-button{
+    background-color:rgb(240, 240, 240);
+    border:0;
+    border-radius:5px;
+    padding:5px;
+    color: #4e72c5;
+    font-weight: bold;
+    margin:1%;
+}
+
+
+
+
+
+/*---------------FIN FAQ----------------------*/
 .section-contacto{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -277,6 +325,7 @@ footer {
     width:25px;
     top:20px;
     left:97%;
+    cursor: pointer;
 }
 
 .banner{
