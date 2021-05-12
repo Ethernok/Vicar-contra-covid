@@ -220,9 +220,10 @@ nav div a:hover {
     margin: 1.5% 0%;
     margin-bottom: 0px;
     font-size: 1.15em;
+    
 }
-.section-contacto p{
-    margin: 1%;
+#div-contacto p{
+    text-align:center;
 }
 .contacto-info{
     font-size:1.5rem;

@@ -28,8 +28,10 @@ $(document).ready(function(){
     $(".close-banner").on('click', ()=>{
     
     $( ".banner" ).effect('clip',{}, 1000, ()=>{$('.relative').hide();});
-    $( ".close-banner" ).effect('clip',{}, 1000, ()=>{$('.close-banner').hide();});
-    })
+    $( ".close-banner" ).effect('clip',{}, 1000);
+
+   
+    }) 
 
     //----------------------Fin animaciones banner-------------------------
 
