@@ -44,10 +44,13 @@ header img {
 }
 
 header h1 {
+    
     padding: 2% 0%;
     padding-left:5%;
     font-family: 'Raleway', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3.5em;
+    -webkit-text-stroke: 0.6px  #37FF8B;
+    
 }
 
 header .logo{
@@ -74,6 +77,7 @@ nav div a {
 }
 
 #current {
+    color: #ff9100;
     color: #0618b4;
     text-decoration: underline;
 }
@@ -95,6 +99,10 @@ nav div a:hover {
     font-size: 1.15em;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.p-section{
+    width:70%;
 }
 #first-section{
     margin-top:2%;
@@ -137,10 +145,12 @@ nav div a:hover {
     bottom:0;
 }
 #zoom-buttons img{
-    max-width: 20px;
+    max-width: 50px;
     margin-top:20px;
     cursor:pointer;
-    
+}
+#zoom-in{
+    margin-left:2%;
 }
 
 #galeria-title{
@@ -162,7 +172,33 @@ nav div a:hover {
    .carousel-inner .item{
       text-align:center; 
    }
-/* Fin de galeria de imagenes, slider incluido */
+
+/*------------------- Fin de galeria de imagenes, slider incluido ---------------- */
+
+
+/*------------Modal Imagenes-----------------------*/
+.modal-dialog{
+    width: 80%;
+    max-width:100%;
+    height:auto;
+    margin:0px auto;
+    align-items: center;
+    text-align: center;
+    margin-top:2%;
+}
+.overlay-img{
+min-width:85%;
+width:85%;
+max-width:100%;
+max-height:830px;
+height: auto;
+align-items: center;
+text-align: center;
+}
+
+/*------------ FIN Modal Imagenes-----------------------*/
+
+
 .section2 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -250,6 +286,7 @@ nav div a:hover {
 }
 
 .section1-ciudadanos {
+    background-color: #b432ff;
     background-color: #8D9EC6;
     text-align: justify;
     display: flex;
@@ -341,54 +378,76 @@ footer {
     animation-iteration-count: infinite;
     animation-name:rainbow-border;
     border-radius:20px;
-    opacity: 0.9;
+    opacity: 0.96;
 }
 .banner h2{
-    font-weight: bold;
     font-size:3.6rem;
     padding:2%;
-    color:rgb(0 172 95);
+    color:black;
     animation-duration:10s;
     animation-iteration-count: infinite;
     animation-name:breath;
+    -webkit-text-stroke: 1px rgb(0 172 95);
     
 }
 .banner h2:hover{
-    color:rgb(0 172 95);
+    
+    font-size:4rem;
     
 }
 @keyframes rainbow-border {
     0% {
       border-color: rgb(249 65 81);
+      background-color:#51D6FF;
     }
 
     20%{
         border-color: #3ff3e4;
+        background-color:#f94151;
     }
     40% {
       border-color: #0098fd;
+      background-color:#b432ff;
     }
     60% {
       border-color:  #13f396;
+      background-color:#ff9100;
     }
     80% {
       border-color:  #ca26f3;
+      
     }
     100%{
         border-color: rgb(249 65 81);
+        background-color:#51D6FF;
     }
     
   }
   @keyframes breath {
    
     0%{
+        -webkit-text-stroke-color: rgb(249 65 81);
         transform:scaleX(1);
     }
+    20%{
+        -webkit-text-stroke-color:#3ff3e4;
+    }
+    40%{
+        -webkit-text-stroke-color: #0098fd;
+    }
     50%{
+        
         transform:scaleX(1.1);
+    }
+    60%{
+        -webkit-text-stroke-color:#13f396;
+    }
+    80%{
+        -webkit-text-stroke-color:#ca26f3;
     }
     
     100%{
+        -webkit-text-stroke-color: rgb(249 65 81);
         transform:scaleX(1);
     }
     
@@ -485,6 +544,20 @@ footer p:hover {
     left:93%;
     top:10px;
 }
+.modal-dialog{
+    width: 95%;
+    max-width:100%;
+    margin-top:40%;
+}
+.overlay-img{
+min-width:85%;
+width:85%;
+max-width:100%;
+max-height:950px;
+height: auto;
+align-items: center;
+text-align: center;
+}
 }
 
 @media screen and (max-width:480px) {
@@ -543,6 +616,7 @@ footer p:hover {
 @media screen and (max-width:300px) {
     #section1-contacto #p-section {
         max-width: 100%;
+        
     }
 
     header img {

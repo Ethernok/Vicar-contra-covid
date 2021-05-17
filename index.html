@@ -32,7 +32,7 @@
         </div></a><img class="close-banner" src="./img/window-close-solid.svg"></></div>
         <section id="first-section" class="section1">
             
-            <div id="p-section">
+            <div class="p-section">
                 <h2>Tomar Consciencia </h2>
                 <p>En una charla encabezada por nuestro alcalde, <b>Antonio Bonilla</b>, en la que tuvo lugar en el
                     Ayuntamiento de Vicar el 1 de Diciembre de 2020 en plena situación de emergencia, se discutió cuales
@@ -61,7 +61,7 @@
         <section class="section2" id="medidas">
             <img src="./img/test_ancianos.jpg"
                 alt="Imagen donde están tomandole una muestra de saliva a una persona mayor debido a covid diecinueve.">
-            <div>
+            <div class="p-section">
                 <h2>Medidas contra la COVID-19</h2>
                 <p>Este virus ha hecho mucho daño a nuestros mayores y a personas vulnerables, por eso hemos decidido
                     tomar medidas para combatirlo, a parte de los consejos que os hemos dado arriba, para que Vicar,
@@ -82,6 +82,18 @@
             </div>
         </section>
     </div>
+
+    <!-- ------------------------MODAL-------------------->
+    <div class="modal fade" id="modal-img" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div id="zoom-buttons">
+                <img id="zoom-out" src="img/search-minus-solid.svg"/>
+                <img id="zoom-in" src="img/search-plus-solid.svg"/>
+            </div>
+        </div>
+      </div>
+
+      <!-- ------------------Fin MODAL-------------------->
     <div class="container">
         <section class="section1 section-galeria" id="galeria">
             <h2 id="galeria-title">Imágenes destacadas de acciones ciudadanas</h2>
@@ -94,25 +106,22 @@
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                 </ol>
-                <div id="zoom-buttons" class="carousel-indicators">
-                    <img id="zoom-out" src="img/search-minus-solid.svg"/>
-                    <img id="zoom-in" src="img/search-plus-solid.svg"/>
-                </div>
+                
                 
                 <div class="carousel-inner">
                     <div class="item active">
-                        <a href="./img/galeria1.jpg" target="_blank"><img src="./img/galeria1.jpg" alt=""></a>
+                        <img data-toggle="modal" data-target="#modal-img" src="./img/galeria1.jpg" alt="">
                     </div>
                     <div class="item">
-                        <a href="./img/galeria2.jpg" target="_blank"><img src="./img/galeria2.jpg" alt=""></a>
+                        <img data-toggle="modal" data-target="#modal-img" src="./img/galeria2.jpg" alt="">
                         
                     </div>
                     <div class="item">
-                        <a href="./img/galeria3.jpg" target="_blank"><img src="./img/galeria3.jpg" alt=""></a>
+                        <img data-toggle="modal" data-target="#modal-img" src="./img/galeria3.jpg" alt="">
                         
                     </div>
                     <div class="item">
-                        <a href="./img/galeria4.jpg" target="_blank"><img src="./img/galeria4.jpg" alt=""></a>
+                        <a data-toggle="modal" data-target="#modal-img"><img src="./img/galeria4.jpg" alt=""></a>
                         
                     </div>
                 </div>
@@ -141,7 +150,7 @@
     <div class="container">
         <section class="section1 section-faq" id="faq">
             <div id="p-section">
-                <h2>Preguntas frequentes</h2>
+                <h2>Preguntas frecuentes</h2>
                 <center><button id="faq-button" type="button">Abrir/Cerrar Todo</button></center>
                 <div id="faq-questions">
                     <h3>¿Cómo puedo colaborar con los ciudadanos?</h3>
